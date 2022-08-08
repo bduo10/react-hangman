@@ -39,7 +39,7 @@ function App() {
       alert(`YOu have lost the game! The word was ${puzzle}.`)
       return 
     }
-    
+
     const userGuess = document.getElementById('user-guess').value.toLowerCase()
   
     if (userGuess === '') {
@@ -73,7 +73,7 @@ const checkVictory = () => {
         </div>
         :
         <div>
-          {puzzle}
+          
           <h1>Hangman App</h1>
           <hr></hr>
           <DisplayPuzzle puzzle={puzzle} lettersGuessed={lettersGuessed}/>
